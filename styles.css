@@ -1,0 +1,13 @@
+/* global style sheet */ 
+
+body {
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+      'Arial', sans-serif;
+    padding: 5px 5px 20px;
+    max-width: 680px;
+    
+}
+
+p{
+    color: red; 
+}
