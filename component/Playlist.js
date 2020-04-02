@@ -3,7 +3,7 @@ import NavBar from './NavBar'
 import Footer from './Footer'
 import Video from './Video'
 import GithubLink from './GithubLink'
-import songs from '../assets/songs.json'
+import songs from '../public/songs.json'
 
 import FormControl from 'react-bootstrap/FormControl';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -100,7 +100,6 @@ class Playlist extends React.Component{
     }
 
     playlistToString(){
-        console.log(this.state)
          //let playlist = this.getSongs(this.state.start, this.state.end, this.state.weight, [])
         let playlist = this.getSongs(this.state.start, this.state.end, this.state.weight, this.state.artists)
         let playlist_as_str = playlist.toString().split('|,').map((item, i) => {

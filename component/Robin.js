@@ -1,8 +1,6 @@
 import React from "react"
 import NavBar from './NavBar'
 import Video from './Video'
-import AAPL from '../assets/AAPLstock.jpeg'
-import GE from '../assets/GEstock.jpeg'
 import Footer from './Footer'
 import GithubLink from "./GithubLink";
 import Container from 'react-bootstrap/Container';
@@ -31,8 +29,8 @@ class Robin extends React.Component{
                 3) The <em>method.py</em> file contains the main functionality of the package. It has easy to use methods that add a layer of abstraction to the project. These methods include: buy, sell, and graph. Below is an example of two graphs each created using the graph method:  
                 <br /> </p>
                 <div style={{textAlign: 'center'}}>
-                    <img className="image1" src= {AAPL}  height={img_size} width={img_size} />
-                    <img className="image1" src= {GE}  height={img_size} width={img_size} />
+                    <img className="image1" src= '/AAPLstock.jpeg'  height={img_size} width={img_size} />
+                    <img className="image1" src= '/GEstock.jpeg'  height={img_size} width={img_size} />
                 </div> 
                 <h4>Messenger Class:</h4>
                 <p>This class allows the user to send a message to any phone number using IMessage or email. The <code>send_by_email(…)</code> allows you to send a message using Gmail. The <code>send_by_imessage(…)</code> tells your computer to open iMessage and send a text to any number. This method can be used to send yourself a conformation text each time you make an API call to robinhood</p>

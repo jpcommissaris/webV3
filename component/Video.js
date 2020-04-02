@@ -1,7 +1,4 @@
 import React from "react"
-import video1 from '../assets/sample_movie.mp4'; 
-import video2 from '../assets/snake_final.mp4'; 
-import video3 from '../assets/playlist.mp4';
 
 
 //a switch case to load any video depending on its name 
@@ -9,11 +6,11 @@ function getVideo(props){
     console.log(props)
     switch(props.name) {
         case 'snake':
-          return video2
+          return '/snake_final.mp4'
         case 'playlist':
-          return video3
+          return '/playlist.mp4'
         default:
-            return video1
+            return '/sample_movie.mp4'
     }
 }
 
