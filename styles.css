@@ -39,6 +39,7 @@ p{
 .footer {
   background-color: #a2d3f0;
   color: white;
+  margin-top: 4px
 }
 #contact {
   margin: 0;
@@ -47,13 +48,8 @@ p{
   vertical-align: middle; 
   padding: 9px 12px;
 }
-#media {
-  padding: 4px 14px;
-  text-align: center;
-}
-.footer a{
-  margin: 0px 4px; 
-}
+
+
 
 /* home page styling */
 a.card{
@@ -67,17 +63,29 @@ a.card:hover {
 }
 
 /* social media links */
-.fa{
-  float: right; 
-  padding: 8px;
-  font-size: 12px;
-  width: 12px;
+#media {
+  padding: 4px 14px;
   text-align: center;
-  text-decoration: none;
+  float: right; 
+}
+.fa{
+  font-size: 26px;
+  margin: 0px 6px; 
+  
   border-radius: 50%;
   background: white;
 }
 .fa:hover {
+  opacity: 0.7;
+}
+.li{
+  font-size: 26px;
+  margin: 0px 6px; 
+  
+  border-radius: 10%;
+  background: white;
+}
+.li:hover {
   opacity: 0.7;
 }
 

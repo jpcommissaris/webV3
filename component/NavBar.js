@@ -3,9 +3,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col'
 
-import Link from 'next/link';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 /** Navbar allows for page switching. */
 
 function setScroll(s){
@@ -19,6 +19,7 @@ function NavBar(props) {
         <Navbar variant= "dark" bg="dark" expand="lg">
             <Navbar.Brand href="/">Julian</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="/">Home</Nav.Link>
@@ -38,6 +39,21 @@ function NavBar(props) {
                         <NavDropdown.Item href="/gamedesign/links">Project links</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
+                  
+            
+            <Nav className="ml-auto">
+                    <Nav.Item>
+                      <a href="https://github.com/jpcommissaris" target="_blank" rel="noopener noreferrer" >
+                          <FontAwesomeIcon  className="fa" icon={['fab', 'github']} /> 
+                      </a>
+                      <a href="https://www.linkedin.com/in/julian-c-87a374177/" target="_blank" rel="noopener noreferrer">
+                          <FontAwesomeIcon className="li" icon={['fab', 'linkedin']} /> 
+                      </a>
+                      <a href="https://www.facebook.com/julian.commissaris.5" target="_blank" rel="noopener noreferrer">
+                          <FontAwesomeIcon className="fa" icon={['fab', 'facebook']} /> 
+                      </a>
+                    </Nav.Item>
+            </Nav> 
             </Navbar.Collapse>
         </Navbar>
     </Container>
